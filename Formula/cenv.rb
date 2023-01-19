@@ -2,8 +2,8 @@ class Cenv < Formula
   desc "Environment variable file changer"
   homepage "https://github.com/JonShort/cenv"
   url "https://github.com/JonShort/cenv/releases/latest/download/cenv-macos-x86_64.tar.gz"
-  version "1.2.1"
-  sha256 "f475b950e1f2ffeaeef4182138856f1d6965a1c1f4919675e18520dc02a1b75a"
+  version "1.3.0"
+  sha256 "0c0dce82e3aace58a9a70d0c33febc5e1afb926141259d729300c95eda9b4326"
   license "MIT"
   head "https://github.com/JonShort/cenv.git", branch: "main"
 
