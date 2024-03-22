@@ -4,10 +4,22 @@ For use with homebrew tap
 ## Auditing the Formula
 This should be done before making any changes, as it helps catch any formatting issues (whitespace etc.).
 
-Run via. `brew audit`, e.g:
+Create a local homebrew tap: (skip if this already exists)
 
 ```bash
-brew audit --formula --strict --online ./Formula/cenv.rb
+brew tap-new cenv-release/check --no-git
+```
+
+Copy the formula to check into the local homebrew tap:
+
+```bash
+cp ./Formula/cenv.rb $(brew --repository)/Library/Taps/cenv-release/homebrew-check/Formula
+```
+
+Run `brew audit` on the formula:
+
+```bash
+brew audit --strict --online cenv-release/check/cenv
 ```
 
 ## Updating the version
